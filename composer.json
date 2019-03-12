@@ -1,0 +1,46 @@
+{
+    "name": "crystoline/centralpayplus",
+    "description": "Helps consume the NIBSS central pay api.",
+    "keywords": [
+        "nibss",
+        "centralpay",
+        "curl"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Babatunde Daniel",
+            "email": "obabatunde@gmail.com",
+            "homepage": "https://github.com/babatundeodaniel",
+            "role": "Owner"
+        },
+        {
+            "name": "Adekunle Adekoya",
+            "email": "crystoline@gmail.com",
+            "role": "Contributor",
+            "homepage": "https://github.com/crystoline"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "~5.3",
+        "scrutinizer/ocular": "^1.1",
+        "guzzlehttp/guzzle": "^6.2",
+        "squizlabs/php_codesniffer": "^2.3",
+        "vlucas/phpdotenv": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Crystoline\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Crystolinek\\Centralpayplus\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
