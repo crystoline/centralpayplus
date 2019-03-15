@@ -1,9 +1,9 @@
 <?php
-namespace UplDevTeam\CentralPayPlus\Helpers;
+namespace Crystoline\CentralPayPlus\Helpers;
 
 use \Closure;
-use \UplDevTeam\CentralPayPlus\Contracts\RouteInterface;
-use \UplDevTeam\CentralPayPlus\Http\RequestBuilder;
+use \Crystoline\CentralPayPlus\Contracts\RouteInterface;
+use \Crystoline\CentralPayPlus\Http\RequestBuilder;
 
 class Caller
 {

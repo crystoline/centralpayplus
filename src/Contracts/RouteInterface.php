@@ -1,5 +1,5 @@
 <?php
-namespace UplDevTeam\CentralPayPlus\Contracts;
+namespace Crystoline\CentralPayPlus\Contracts;
 
 interface RouteInterface
 {

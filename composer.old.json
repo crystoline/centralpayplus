@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Upldevteam\\": "src/"
+            "Crystoline\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Upldevteam\\Centralpayplus\\Test\\": "tests/"
+            "Crystoline\\Centralpayplus\\Test\\": "tests/"
         }
     },
     "scripts": {

@@ -6,7 +6,7 @@
  * Time: 2:43 PM
  */
 
-namespace UplDevTeam\CentralPayPlus\Exception;
+namespace Crystoline\CentralPayPlus\Exception;
 
 
 class CentralPayPlusRequestException extends \Exception

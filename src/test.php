@@ -7,9 +7,9 @@
  */
 
 require 'vendor/autoload.php';
-require 'vendor/upldevteam/centralpayplus/src/autoload.php';
+require 'vendor/Crystoline/centralpayplus/src/autoload.php';
 
-use UplDevTeam\CentralPayPlus;
+use Crystoline\CentralPayPlus;
 
 try{
     $options = $context = stream_context_create([

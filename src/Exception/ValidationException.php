@@ -1,8 +1,8 @@
 <?php
 
-namespace UplDevTeam\CentralPayPlus\Exception;
+namespace Crystoline\CentralPayPlus\Exception;
 
-use UplDevTeam\CentralPayPlus\Exception\CentralPayPlusRequestException;
+use Crystoline\CentralPayPlus\Exception\CentralPayPlusRequestException;
 
 class ValidationException extends CentralPayPlusRequestException
 {

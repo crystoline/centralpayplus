@@ -1,10 +1,10 @@
 <?php
 
-namespace UplDevTeam\CentralPayPlus\Helpers;
+namespace Crystoline\CentralPayPlus\Helpers;
 
 use \Closure;
-use \UplDevTeam\CentralPayPlus\Contracts\RouteInterface;
-use \UplDevTeam\CentralPayPlus\Exception\ValidationException;
+use \Crystoline\CentralPayPlus\Contracts\RouteInterface;
+use \Crystoline\CentralPayPlus\Exception\ValidationException;
 
 class Router
 {
@@ -15,7 +15,9 @@ class Router
     public static $ROUTES  = [
         'createMandateRequest',
         'validateOTPRequest',
+        'validateOTPRequestNoReg',
         'generateOTPRequest',
+        'generateOTPRequestNoReg',
         'cancelMandateRequest',
         'requeryMandateRequest',
         'listActiveBanks',
@@ -42,7 +44,7 @@ class Router
         }
 
         $this->route = $route;
-        $this->route_class = 'UplDevTeam\\CentralPayPlus\\Routes\\' . ucwords($route);
+        $this->route_class = 'Crystoline\\CentralPayPlus\\Routes\\' . ucwords($route);
 
         $mets = get_class_methods($this->route_class);
 

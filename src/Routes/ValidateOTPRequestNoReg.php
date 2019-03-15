@@ -11,13 +11,13 @@ namespace Crystoline\CentralPayPlus\Routes;
 
 use Crystoline\CentralPayPlus\Contracts\RouteInterface;
 
-class CreateMandateRequest implements RouteInterface
+class ValidateOTPRequestNoReg implements RouteInterface
 {
 
     public static function getMethodName () : string
     {
         // TODO: Implement getMethodName() method.
-        return 'createMandateRequest';
+        return 'validateOTPRequestNoReg';
     }
 
     public static function requiredParams (): bool
@@ -32,6 +32,7 @@ class CreateMandateRequest implements RouteInterface
         return [
             'AcctNumber',
             'AcctName',
+            'MandateCode',
             'TransType',
             'BankCode',
             'BillerID',
@@ -41,9 +42,8 @@ class CreateMandateRequest implements RouteInterface
         ];
     }
 
-    public static function parameterType (): string
+    public static function parameterType(): string
     {
-        // TODO: Implement parameterType() method.
-        return 'array';
+       return 'array';
     }
 }

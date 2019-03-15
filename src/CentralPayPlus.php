@@ -6,14 +6,14 @@
  * Time: 1:11 PM
  */
 
-namespace UplDevTeam\CentralPayPlus;
+namespace Crystoline\CentralPayPlus;
 
 
 use SoapFault;
-use UplDevTeam\CentralPayPlus\Exception\CentralPayPlusRequestException;
-use UplDevTeam\CentralPayPlus\RequestBuilder;
-use UplDevTeam\CentralPayPlus\Routes;
-use UplDevTeam\CentralPayPlus\Helpers\Router;
+use Crystoline\CentralPayPlus\Exception\CentralPayPlusRequestException;
+use Crystoline\CentralPayPlus\RequestBuilder;
+use Crystoline\CentralPayPlus\Routes;
+use Crystoline\CentralPayPlus\Helpers\Router;
 
 class CentralPayPlus
 {
@@ -26,6 +26,7 @@ class CentralPayPlus
         'CreateMandateRequest',
         'ValidateOTPRequest',
         'GenerateOTPRequest',
+        'GenerateOTPRequestNoReg',
         'CancelMandateRequest',
         'RequeryMandateRequest',
         'listActiveBanks',
@@ -67,7 +68,7 @@ class CentralPayPlus
                 } else {
                     //echo $requestBuilder->generateRequest()->getRequest()->xml();
                     $request_xml = trim('<arg0><![CDATA['.$requestBuilder->generateRequest()->getRequest()->xml().']]></arg0>', "\r\n");
-                        //echo $request_xml;
+                    //echo $request_xml;
                     $response = $this->soapClient->{$method}(
                         //new \SoapVar($request_xml,XSD_ANYXML, null, null,'arg0')
                         [

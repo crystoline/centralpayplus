@@ -6,10 +6,10 @@
  * Time: 10:27 AM
  */
 
-namespace UplDevTeam\CentralPayPlus\Routes;
+namespace Crystoline\CentralPayPlus\Routes;
 
 
-use UplDevTeam\CentralPayPlus\Contracts\RouteInterface;
+use Crystoline\CentralPayPlus\Contracts\RouteInterface;
 
 class ValidateOTPRequest implements RouteInterface
 {
@@ -40,5 +40,10 @@ class ValidateOTPRequest implements RouteInterface
             'Amount',
             'BillerTransId'
         ];
+    }
+
+    public static function parameterType(): string
+    {
+       return 'array';
     }
 }
